@@ -1,12 +1,8 @@
-/*** @jsx React.DOM */
-
-var realPython = React.createClass({
-  render: function() {
-    return (<h2>Greetings, from Real Python!</h2>);
-  }
-});
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
 
 ReactDOM.render(
-  React.createElement(realPython, null),
-  document.getElementById('content')
+  <App />,
+  document.getElementById('container')
 );
