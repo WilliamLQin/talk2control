@@ -1,26 +1,28 @@
-class Speech extends React.Component {
-  constructor
-  initializeSpeechRec() {
-    speech = new p5.SpeechRec(); // speech recognition object (will prompt for mic access)
-    speech.onResult = showResult; // bind callback function to trigger when speech is recognized
-    speech.continuous = true;
-    speech.interimResults = true;
-  }
+var speech = new p5.SpeechRec();
+var btn = document.getElementById('btn-1');
 
-  startSpeechRec() {
-    speech.start(); // start listening
-  }
+function initializeSpeechRec() {
 
-  stopSpeechRec() {
-    speech.stop();
-  }
+  speech.onResult = this.showResult; // bind callback function to trigger when speech is recognized
+  speech.continuous = true;
+  speech.interimResults = true;
+  // speech.start();
+}
 
-  showResult() {
-     console.log(speech.resultString); // log the result
-  }
-};
+function startSpeechRec() {
+  // start listening
+  speech.start();
+}
 
-export default Speech;
+function stopSpeechRec() {
+  speech.stop();
+}
 
-// initializeSpeechRec();
-// startSpeechRec();
+function showResult() {
+  console.log(speech.resultString); // log the result
+}
+
+initializeSpeechRec();
+btn.onclick = function () {
+  startSpeechRec();
+}
