@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/WilliamLQin/talk2control#readme",
   "dependencies": {
+    "p5": "^0.5.16",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
