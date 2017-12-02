@@ -13,7 +13,12 @@ class App extends React.Component {
       <div id="container">
         <h1>Talk To Control</h1>
         <h3>Command to Keyword</h3>
-        <Recorder />
+        <div id="recorder">
+          <p>Record Keyword Command</p>
+          <button id="btn-1" onClick={function () {
+          }}>Record</button>
+          <textarea class="text-area" />
+        </div>
       </div>
     )
   }
