@@ -4,3 +4,4 @@ static/dist/bundle.js
 
 # macOS
 .DS_Store
+static/.DS_Store
