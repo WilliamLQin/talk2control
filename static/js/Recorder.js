@@ -9,20 +9,23 @@ class Recorder extends React.Component {
     this.state = {
       text: 'Say something',
       empty: true,
-      foo: null
+      count: 0,
+      speech: null
     }
   }
 
-  startRecording() {
-    console.log('hi');
+  startRecording(foo) {
+    // foo.start();
+    console.log(foo);
   }
 
   render() {
     return (
       <div id="recorder">
         <p>Record Keyword Command</p>
-        <button onClick={this.startRecording.bind(this)}>Record</button>
-        <textarea class="text-area" defaultValue={this.state.text} />
+        <button id="btn-1" onClick={function () {
+        }}>Record</button>
+        <textarea className="text-area" defaultValue={this.state.text} />
       </div>
     )
   }
