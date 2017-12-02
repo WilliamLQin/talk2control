@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: PyUserInput
+Version: 0.1.9
+Summary: A simple, cross-platform module for mouse and keyboard control
+Home-page: https://github.com/SavinaRoja/PyUserInput
+Author: Paul Barton
+Author-email: pablo.barton@gmail.com
+License: http://www.gnu.org/licenses/gpl-3.0.html
+Description: # talk2control
+        
+Keywords: mouse,keyboard user input event
+Platform: UNKNOWN

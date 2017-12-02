@@ -1,5 +1,6 @@
 var speech = new p5.SpeechRec();
 var btn = document.getElementById('btn-1');
+var text = document.getElementById('keyword');
 
 function initializeSpeechRec() {
 
@@ -19,7 +20,13 @@ function stopSpeechRec() {
 }
 
 function showResult() {
-  console.log(speech.resultString); // log the result
+  var speechResult = speech.resultString;
+  speechWords = speechResult.split(' ');
+  speechResult = speechWords[speechWords.length - 1];
+  console.log(speechResult); // log the result
+  if (speechResult === text.value) {
+    simulateKeyPress();
+  }
 }
 
 initializeSpeechRec();
