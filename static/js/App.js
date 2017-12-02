@@ -10,10 +10,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="container">
-        <h1>Talk To Control</h1>
-        <h3>Command to Keyword</h3>
-        <Recorder />
+      <div id="header">
+          <div id="imageHead">
+            <img src="../t2c.png"/>
+          </div>
+          <div id="desc">
+            <span className="subFont">Control your screen with voice recognition and filters for seamless presentations and smooth navigation.</span>
+          </div>
+          <h3 className="titleFont">Command to Keyword</h3>
+          <Recorder />
       </div>
     )
   }
