@@ -1,2 +1,3 @@
 # Node modules
-./static/node_modules
+static/node_modules/
+static/dist/bundle.js
