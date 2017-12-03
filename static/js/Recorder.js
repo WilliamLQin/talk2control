@@ -25,6 +25,7 @@ class Recorder extends React.Component {
         <p>Record Keyword Command</p>
         <button id="btn-1" onClick={function () {
         }}>Record</button>
+        <br></br>
         <textarea className="text-area" defaultValue={this.state.text} />
       </div>
     )
