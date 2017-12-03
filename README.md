@@ -60,7 +60,7 @@ Modify line 6 of the file:
   (key code 49)
 ```
 
-Switch to a different keycode to press a different button. Go to this complete ![list](http://eastmanreference.com/complete-list-of-applescript-key-codes/) of keycodes to find out which keycodes refer to which keys. <br>
+Switch to a different keycode to press a different button. Go to this ![complete list of keycodes](http://eastmanreference.com/complete-list-of-applescript-key-codes/) to find out which keycodes refer to which keys. <br>
 <br>
 For example...
 
