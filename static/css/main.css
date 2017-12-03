@@ -20,6 +20,7 @@ footer{
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-style: italic;
+  padding: 8px;
 }
 
 .titleFont {
@@ -32,8 +33,9 @@ h1 {
 }
 
 h3 {
-  margin-top: 0px;
-  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  font-size: 40px;
 }
 
 .subFont {
@@ -42,7 +44,7 @@ h3 {
 }
 
 #desc {
-  margin: 15px;
+  margin: 25px;
 }
 
 #header {
