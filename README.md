@@ -14,6 +14,9 @@ Talk2Control.tech is currently requires specific conditions to function properly
 You can see the working project at ![here](https://talk2control.tech), but the way the code works causes you to cause key presses on the <strong>server</strong> rather than your computer. <br>
 As such, it is recommended to create clone of this project and run it on localhost to get it to work. <br>
 <br>
+If you inspect element at the live website, you can still see the output on the console of what the voice recognition library is outputting. When it matches up with your keyword, it will cause a key press on the server. <br>
+Currently, the key press is set to the space bar and only works with one key word. <br>
+<br>
 Please note, Talk2Control.tech currently only works on Mac OS X. <br>
 
 ## Getting Started
@@ -46,3 +49,25 @@ flask run
 <br>
 
 If you encounter any issues, please consult the Flask documentation to get it set up. <br>
+
+## Customization
+
+Changing the key that is pressed when the keyword is identified is easy. <br>
+Open the app.py file in the root directory of the project. <br>
+Modify line 6 of the file:
+
+```
+  (key code 49)
+```
+
+Switch to a different keycode to press a different button. Go to this complete ![list](http://eastmanreference.com/complete-list-of-applescript-key-codes/) of keycodes to find out which keycodes refer to which keys. <br>
+<br>
+For example...
+
+```
+  (key code 124)
+```
+
+will press the right key whenever the keyword is heard.<br>
+<br>
+Currently, you can only map one word to one key.
