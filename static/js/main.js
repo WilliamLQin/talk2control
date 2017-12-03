@@ -13,7 +13,7 @@ function initializeSpeechRec() {
 function startSpeechRec() {
   // start listening
   speech.start();
-  btn.innerText = "Recording...";
+  btn.innerText = "Listening...";
 }
 
 function showResult() {

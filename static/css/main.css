@@ -8,6 +8,18 @@ img {
 
 body {
   background-color: #CEE9FF;
+  min-height: 100%;
+}
+
+footer{
+  text-align: center;
+  bottom:0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .titleFont {
@@ -46,7 +58,7 @@ h3 {
 }
 
 #btn-1 {
-    background-color: #4CAF50 ;
+    background-color: #3070a5 ;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -58,5 +70,5 @@ h3 {
     cursor: pointer;
   }
   #btn-1:hover {
-    background-color: #2e7030 ;
+    background-color: #0a3d68 ;
   }
