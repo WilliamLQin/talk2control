@@ -7,7 +7,7 @@ osascript -e 'tell application "System Events"
     end tell'
 """
 
-active = True
+active = 0
 
 app = Flask(__name__)
 
@@ -20,9 +20,11 @@ def hello_world():
 def signUp():
     #minimize active window
     global active
-    if active:
+    if active == 0:
         os.system(cmd)
-        active = False
+        active = 2
     else:
-        active = True
-    return "awesome"
+        active -= 1
+        if active < 0:
+            active = 0
+    return ""
