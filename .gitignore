@@ -1,10 +1,8 @@
 # Node modules
 static/node_modules/
-static/dist/bundle.js
 
 # macOS
 .DS_Store
-static/.DS_Store
 
 # Flask
 __pycache__/
