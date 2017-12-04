@@ -5,3 +5,7 @@ static/dist/bundle.js
 # macOS
 .DS_Store
 static/.DS_Store
+
+# Flask
+__pycache__/
+__pycache__/*
